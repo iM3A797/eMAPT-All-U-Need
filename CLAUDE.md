@@ -6,7 +6,7 @@ This is **eMAPT//TRAINER**, the public static study website for the eMAPT exam, 
 DOC_PASS='<password>' openssl enc -d -aes-256-cbc -pbkdf2 -iter 600000 -a -in DOCUMENTATION.md.enc -out DOCUMENTATION.md -pass env:DOC_PASS
 ```
 At the end of a session, update `DOCUMENTATION.md`, re-encrypt it (same command with `-salt` and without `-d`, input/output swapped),
-commit **only** the `.enc` file (the plain file is git-ignored), and copy the plain file to the private repo `BooSayLeen/eMAPT-Prep`. Never write the password in any file.
+commit **only** the `.enc` file (the plain file is git-ignored), and copy the plain file to the private repo `iM3A797/eMAPT-Prep`. Never write the password in any file.
 
 - The owner is new to GitHub. Do all the git work, commit and push directly to `main`, and explain things simply.
 - No build step: plain HTML/CSS/JS. Keep it that way unless the owner agrees otherwise.
